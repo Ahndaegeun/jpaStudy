@@ -7,10 +7,13 @@ spring:
     username: sa
     password: 1234
     driver-class-name: org.h2.Driver
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
 
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     properties:
       hibernate:
 #        show_sql: true
